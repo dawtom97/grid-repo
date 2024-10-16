@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "nawigacja nawigacja nawigacja"
+    "boczny o-nas o-nas"
+    "stopka stopka stopka";
+}
+
+.navbar {
+    background-color: gold;
+    padding: 20px;
+    grid-area: nawigacja;
+}
+.sidebar {
+    background-color: green;
+    padding: 20px;
+    grid-area: boczny;
+}
+.about {
+    padding: 20px;
+    background-color: blueviolet;
+    grid-area: o-nas;
+    font-size: 4rem;
+}
+.footer {
+    background-color: blue;
+    padding: 20px;
+    grid-area: stopka;
+}
